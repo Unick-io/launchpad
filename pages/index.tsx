@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to unlinkSync.io NFT <a href="http://unick.io">launchpad</a>!
+          Welcome to <a href="http://unick.io">Unick.io</a>! NFT launchpad.
         </h1>
 
         <p className={styles.description}>
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             href="https://marketplace.unick.io"
             className={styles.card}
           >
-
+            Marketplace.unick.io
           </a>
         </div>
       </main>
