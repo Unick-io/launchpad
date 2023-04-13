@@ -1,10 +1,11 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 4rem;
+  max-width: 1920px;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 4rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -117,3 +118,136 @@
 .logo img {
   filter: invert(1);
 }
+
+.connectButton {
+  background-color: #6E56CB !important;
+  color:#fafafa !important;
+  padding-left: 1.8rem !important;
+  padding-right: 1.8rem !important;
+  padding-top: 0.9rem !important;
+  padding-bottom: 0.9rem !important;
+}
+
+.launchpadBanner {
+  width: "100%";
+  border-radius: 1rem;
+}
+
+.glow {
+  animation: glow 3s infinite alternate;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 4px -1px #f4dc76;
+  }
+  to {
+    box-shadow: 0 0 10px 7px #ffb300;
+  }
+}
+
+.glow2 {
+  animation: glow2 3s infinite alternate;
+}
+@keyframes glow2 {
+  from {
+    box-shadow: 0 0 4px -1px #6e56cb;
+  }
+  to {
+    box-shadow: 0 0 10px 7px #6b0098;
+  }
+}
+
+.glowGreen {
+  animation: glowGreen 3s infinite alternate;
+}
+
+@keyframes glowGreen {
+  from {
+    box-shadow: 0 0 4px -1px rgb(127, 240, 149);
+  }
+  to {
+    box-shadow: 0 0 10px 7px #04f635;
+  }
+}
+.topBottomLeft {
+  position: absolute;
+  bottom: 25px;
+  right: 75%;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(142, 142, 142, 0.439);
+  border-radius:0.7rem;
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 50px;
+  right: 75%;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(142, 142, 142, 0.439);
+  border-radius:0.7rem;
+}
+
+.bannerContainer {
+  position: relative;
+ }
+
+ .bottomRight{
+  float: right;
+  margin-right: 3rem;
+  background-image: linear-gradient(to left, #6e56cb 0%, #9100b1 101.52%);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 0.7rem;
+  opacity: 0.9;
+  font-weight: 500;
+  z-index: 1;
+  margin-top: 20px;
+ }
+
+ .bottomRight:hover{
+  background-image: linear-gradient(to left, #9d9d9d 0%, #eaeaea 101.52%);
+  color: black;
+  opacity: 0.99;
+ }
+
+ .bannerTitle {
+  font-size: 30px;
+ }
+ .bannerStats {
+  font-size: 20px;
+  font-weight: 500;
+ }
+
+ .launchpadBanner {
+  position: relative;
+ }
+
+ .bannerLive {
+  float: left;
+  margin-right: 1rem;
+  background-color: rgba(142, 142, 142, 0.2);
+  color: rgb(57, 255, 73);
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  z-index: 1;
+ }
+
+.bannerButtons {
+  position: absolute;
+  display: inline-block;
+  margin-left: 70%;
+  margin-top: -100px;
+ }
+ .overview {
+  text-align: left;
+ }

@@ -9,6 +9,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 import { useTheme } from 'next-themes'
 import { useMediaQuery } from 'react-responsive'
 import { useIsMounted } from 'usehooks-ts'
+import styles from "../../styles/Home.module.css";
 
 
 export const NAVBAR_HEIGHT = 81
@@ -35,7 +36,7 @@ const Navbar = () => {
         height: NAVBAR_HEIGHT,
         px: '$5',
         width: '100%',
-        maxWidth: 1920,
+        maxWidth: 1800,
         mx: 'auto',
         borderBottom: '1px solid $slate12',
         zIndex: 999,
@@ -72,12 +73,12 @@ const Navbar = () => {
       <Box css={{ flex: 1, px: '$5', maxWidth: '60%' }}>
       </Box>
       <Flex align="center" css={{ gap: '$5', mr: '$5' }}>
-        <Link href="/mint">
+        <Link href="/mintingpage">
           <NavItem active={router.pathname == '/collection-rankings'}>
             Mint
           </NavItem>
         </Link>
-        <Link href="/stake">
+        <Link href="/stakingpage">
           <NavItem active={router.pathname == '/stake'}>Stake</NavItem>
         </Link>
         <Link href="https://marketplace.unick.io">
@@ -94,7 +95,7 @@ const Navbar = () => {
     <ThemeSwitcher />
 
     <Box css={{ maxWidth: '185px' }}>
-      <ConnectWallet />
+      <ConnectWallet className= {styles.connectButton}/>
     </Box>
   </Flex>
   </Flex>

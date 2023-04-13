@@ -1,35 +1,104 @@
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import { Footer } from '../components/home/Footer';
+import Hero from '../components/home/Hero';
 import Layout from '../components/Layout';
+import Link from 'next/link'
+import Image from "next/image"
+import { useAddress } from "@thirdweb-dev/react";
 
 const Home: NextPage = () => {
+  const address = useAddress();
   return (
     <Layout>
       <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to <a href="http://unick.io">Unick.io</a> NFT launchpad.
-          </h1>
-
-          <p className={styles.description}>
-          App is in development. Check back soon.
-          </p>
-
-          <div className={styles.grid}>
-
-            <h2 className={styles.h2}>Check out our marketplace</h2>
-            <a
-              href="https://marketplace.unick.io"
-              className={styles.card}
-            >
-              Marketplace.unick.io
-            </a>
-          </div>
-        </main>
-        <Footer />
+        <div className={styles.launchpadBanner}>
+          <ul style={{listStyleType: 'none'}}>
+            <li>
+              <Link href="/stake-unick" id="unick membership">
+                <div>
+                  <Image
+                    src="/unicMintBanner.png"
+                    alt="unick-Mint-Banner"
+                    width={1700}
+                    height={400}
+                  />
+                  <div className={styles.topBottomLeft}>
+                    <video
+                      onContextMenu={e => e.preventDefault()}
+                      controls
+                      controlsList="nodownload"
+                      height={200}
+                      width={200}
+                      src="/unickMemberNft.mov"
+                      
+                    />
+                    <h1 className={styles.bannerTitle}>
+                      Unick Pass ✪
+                    </h1>
+                    <p className={styles.bannerStats}>By Unick.io</p>
+                    <p className={styles.bannerStats}>Open Edition · 0.01Ξ </p>
+                  </div>
+                  <div className={styles.bannerButtons}>
+                    <p className={`${styles.bannerLive} ${styles.glowGreen}`}>
+                      MINTING NOW
+                    </p>
+                    <div className={styles.bottomRight}>
+                      View Drop
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </li>
+          </ul>
       </div>
-    </Layout>
+      <main className={styles.main}>
+      {address ? (
+        <h1 className={styles.title}>
+        Welcome to <a href="http://unick.io">Unick.io</a> NFT launchpad.
+      </h1>
+        ):(
+        <h1 className={styles.title}>
+        Connect your <a>wallet</a> in order to interact with the launchpad.
+        </h1>)}
+        <Hero />
+
+        <h2 className={styles.veryBigSpacerTop}>Upcoming Drops 🚨 </h2>
+          <h3 className={styles.bigSpacerTop}>April 30</h3>
+            <div className={`${styles.launchpadBanner} ${styles.spacerTop}`}>
+              <ul style={{listStyleType: 'none'}}>
+                <li>
+                  <Link href="/BOGC" id="blockheads og club">
+                    <div>
+                      <Image
+                        className={styles.mintContainer}
+                        src="/BOGCbanner.png"
+                        alt="BOGC banner"
+                        width={1700}
+                        height={500}
+                      />
+                      <div className={styles.bottomLeft}>
+                        <Image
+                          src="/bogc1.png"
+                          alt="Blockheads OG Club"
+                          height="200"
+                          width="200"
+                        />
+                        <h1 className={styles.bannerTitle}>
+                          Blockheads <br />OG Club ✪
+                        </h1>
+                        <p className={styles.bannerStats}>By UnickLabs</p>
+                        <p className={styles.bannerStats}>8888 items · 0.025Ξ </p>
+                      </div>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+      </main>
+      <Footer />
+    </div>
+  </Layout>
   );
 };
 

@@ -1,0 +1,185 @@
+.margin{
+  margin-top: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.right {
+  width: 40%;
+}
+
+.gradient {
+  position: flex;
+  margin-top: 3.5rem;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  margin-bottom: 4rem; 
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.buttonCard {
+  height: 120px;
+  width: 300px;
+  padding-left: 5px;
+  /* background-color: #ffffff0d; */
+  background-color: #c2c2c2d8;
+  border: 1px solid #0000006b;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1;
+  position: relative;
+}
+
+.buttonCard span {
+  display: flex;
+  position: absolute;
+  
+}
+
+.buttonCard span div::after {
+  background-color: #99999b;
+}
+
+.buttonCard:hover span div::after {
+  background-color: #949292;
+}
+
+.buttonCard:hover {
+  background-color: #ffffff;
+}
+
+.hollow {
+  background-color: #6E56CB !important;
+  cursor: pointer;
+}
+
+.hollow h4,
+.hollow p {
+  color: rgb(255, 255, 255) !important;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttonCard h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+.buttonCard:hover h4 {
+  color: black;
+}
+
+.buttonCard p {
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+}
+
+.dashed {
+  position: relative;
+  height: 100%;
+  width: 2rem;
+}
+
+.dashed::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 2px dashed #9146a49f;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  translate: 0 -50%;
+}
+
+#bogc {
+  margin-top: 130px;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+}
+
+.wallet button {
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 680px) {
+  .wallet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .gradient {
+    height: max-content;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .gradient > p {
+    font-size: 15px;
+    padding-block: 8px;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .dashed {
+    width: 2px;
+    height: 20px;
+  }
+
+  .dashed::after {
+    width: 100%;
+    height: 100%;
+    border-top: none;
+    border-left: 2px dashed #ffffff6b;
+    top: 0%;
+    left: 50%;
+    translate: -50% 0%;
+  }
+
+  #astroLeft,
+  #astroRight {
+    display: none;
+  }
+}
