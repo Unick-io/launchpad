@@ -100,7 +100,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://twitter.com/unick_io"
           >
-            <Button size="xs" color="gray9">
+            <Button size="xs" css={{ color: '$slate7' }}>
               <FontAwesomeIcon icon={faTwitter} width={14} height={14} />
             </Button>
           </a>
@@ -109,7 +109,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://discord.gg/Rnmut7dV"
           >
-            <Button size="xs" color="gray9">
+            <Button size="xs" css={{ color: '$slate7' }}>
               <FontAwesomeIcon icon={faDiscord} width={14} height={14} />
             </Button>
           </a>
@@ -118,7 +118,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             href="https://www.instagram.com/unick_io"
           >
-            <Button size="xs" color="gray9">
+            <Button size="xs" css={{ color: '$slate7' }}>
               <FontAwesomeIcon icon={faInstagram} width={14} height={14} />
             </Button>
           </a>         
