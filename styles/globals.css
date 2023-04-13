@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #7dd3fc;
+  color: #6E56CB;
   text-decoration: none;
 }
 
@@ -21,4 +21,8 @@ html {
 body {
   color: #e7e8e8;
   background: #0f1318;
+}
+
+:root{
+  background-color: black;
 }
