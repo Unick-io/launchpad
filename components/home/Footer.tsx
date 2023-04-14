@@ -65,7 +65,8 @@ export const Footer = () => {
     <Flex
       justify="between"
       css={{
-        pb: '$3',
+        pb: '$5',
+        pl: '$6',
         flexDirection: 'column',
         alignItems: 'flex-start',
         gap: 36,

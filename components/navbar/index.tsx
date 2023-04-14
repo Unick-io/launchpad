@@ -36,7 +36,7 @@ const Navbar = () => {
         height: NAVBAR_HEIGHT,
         px: '$5',
         width: '100%',
-        maxWidth: 1800,
+        maxWidth: 1900,
         mx: 'auto',
         borderBottom: '1px solid $slate12',
         zIndex: 999,

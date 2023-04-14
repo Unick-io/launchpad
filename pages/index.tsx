@@ -12,17 +12,20 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.launchpadBanner}>
+        <div>
           <ul style={{listStyleType: 'none'}}>
             <li>
               <Link href="/stake-unick" id="unick membership">
                 <div>
-                  <Image
+                  <Image className={styles.launchpadBanner}
                     src="/unicMintBanner.png"
                     alt="unick-Mint-Banner"
-                    width={1700}
+                    width={1600}
                     height={400}
+                    quality={100}
+                    priority
                   />
+
                   <div className={styles.topBottomLeft}>
                     <video
                       onContextMenu={e => e.preventDefault()}
@@ -74,8 +77,10 @@ const Home: NextPage = () => {
                         className={styles.mintContainer}
                         src="/BOGCbanner.png"
                         alt="BOGC banner"
-                        width={1700}
+                        width={1600}
                         height={500}
+                        quality={100}
+                        priority
                       />
                       <div className={styles.bottomLeft}>
                         <Image
