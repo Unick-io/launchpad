@@ -19,7 +19,6 @@ import {
   } from "../consts/contractAddresses";
   import styles from "../styles/Home.module.css";
   import Layout from '../components/Layout';
-  import { Footer } from '../components/home/Footer';
   
   const Stake: NextPage = () => {
     const address = useAddress();
@@ -139,7 +138,6 @@ import {
           </>
         )}
       </div>
-      <Footer />
     </Layout>
     );
   };

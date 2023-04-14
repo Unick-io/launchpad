@@ -11,50 +11,51 @@ const Home: NextPage = () => {
   const address = useAddress();
   return (
     <Layout>
+    
       <div className={styles.container}>
-        <div>
-          <ul style={{listStyleType: 'none'}}>
-            <li>
-              <Link href="/stake-unick" id="unick membership">
-                <div>
-                  <Image className={styles.launchpadBanner}
-                    src="/unicMintBanner.png"
-                    alt="unick-Mint-Banner"
-                    width={1600}
-                    height={400}
-                    quality={100}
-                    priority
-                  />
+      <div>
+      <ul style={{listStyleType: 'none'}}>
+        <li>
+          <Link href="/stake-unick" id="unick membership">
+            <div>
+              <Image className={styles.launchpadBanner}
+                src="/unicMintBanner.png"
+                alt="unick-Mint-Banner"
+                width={1600}
+                height={400}
+                quality={100}
+                priority
+              />
 
-                  <div className={styles.topBottomLeft}>
-                    <video
-                      onContextMenu={e => e.preventDefault()}
-                      controls
-                      controlsList="nodownload"
-                      height={200}
-                      width={200}
-                      src="/unickMemberNft.mov"
-                      
-                    />
-                    <h1 className={styles.bannerTitle}>
-                      Unick Pass ✪
-                    </h1>
-                    <p className={styles.bannerStats}>By Unick.io</p>
-                    <p className={styles.bannerStats}>Open Edition · 0.01Ξ </p>
-                  </div>
-                  <div className={styles.bannerButtons}>
-                    <p className={`${styles.bannerLive} ${styles.glowGreen}`}>
-                      MINTING NOW
-                    </p>
-                    <div className={styles.bottomRight}>
-                      View Drop
-                    </div>
-                  </div>
+              <div className={styles.topBottomLeft}>
+                <video
+                  onContextMenu={e => e.preventDefault()}
+                  controls
+                  controlsList="nodownload"
+                  height={200}
+                  width={200}
+                  src="/unickMemberNft.mov"
+                  
+                />
+                <h1 className={styles.bannerTitle}>
+                  Unick Pass ✪
+                </h1>
+                <p className={styles.bannerStats}>By Unick.io</p>
+                <p className={styles.bannerStats}>Open Edition · 0.01Ξ </p>
+              </div>
+              <div className={styles.bannerButtons}>
+                <p className={`${styles.bannerLive} ${styles.glowGreen}`}>
+                  MINTING NOW
+                </p>
+                <div className={styles.bottomRight}>
+                  View Drop
                 </div>
-              </Link>
-            </li>
-          </ul>
-      </div>
+              </div>
+            </div>
+          </Link>
+        </li>
+      </ul>
+  </div>
       <main className={styles.main}>
       {address ? (
         <h1 className={styles.title}>

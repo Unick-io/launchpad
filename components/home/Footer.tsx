@@ -92,7 +92,7 @@ export const Footer = () => {
         </Flex>
         <Flex
           direction="column"
-          css={{ alignItems: 'flex-start', '@bp600': { alignItems: 'flex-end' } }}
+          css={{ textColor:'$slate1', alignItems: 'flex-start', '@bp600': { alignItems: 'flex-end' } }}
         >
         <SectionTitle title="Join Unick Community" />
         <Flex css={{ gap: '$5', mt: 16, }}>

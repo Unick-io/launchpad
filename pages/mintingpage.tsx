@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import { Footer } from '../components/home/Footer';
 import Layout from '../components/Layout';
 import Link from 'next/link'
 import Image from "next/image"
@@ -9,9 +8,9 @@ const Minting: NextPage = () => {
     return (
       <Layout>
 
-           <Text> Staking Coming Soon </Text>
+      <Text css={{color: '$slate1'}}> Minting Page Coming Soon </Text>
 
-        <Footer />
+
       </Layout>
       );
     };

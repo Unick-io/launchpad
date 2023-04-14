@@ -3,6 +3,7 @@ import React, { FunctionComponent } from "react";
 import styles from "../../styles/Hero.module.css";
 import { ConnectWallet, useMetamask, useAddress, ChainId } from "@thirdweb-dev/react";
 import Link from 'next/link';
+import Image from "next/image"
 
 const Hero: FunctionComponent = () => {
   const chainId = ChainId.Mainnet;
@@ -29,7 +30,7 @@ const Hero: FunctionComponent = () => {
           <div className={styles.cta}>
             
             <li style={{listStyleType: 'none'}}>
-            <Link href="/Launchpad" id="launchpad">
+            <Link href="/mintingpage" id="launchpad">
             <div className={styles.buttonCard}>
               <h4>Mint an NFT 💎</h4>
               <p>{mintText}</p>
@@ -38,7 +39,7 @@ const Hero: FunctionComponent = () => {
             </li>
             <div className={styles.dashed} />
             <li style={{listStyleType: 'none'}}>
-            <Link href="/staking" id="stake">
+            <Link href="/stakingpage" id="stake">
             <div
               className={`${styles.buttonCard} ${
                address? "" : styles.hollow

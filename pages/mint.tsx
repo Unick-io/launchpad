@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { nftDropContractAddress } from "../consts/contractAddresses";
 import styles from "../styles/Home.module.css";
 import Layout from '../components/Layout';
-import { Footer } from '../components/home/Footer';
 
 const Mint: NextPage = () => {
   const router = useRouter();
@@ -35,7 +34,6 @@ const Mint: NextPage = () => {
         Claim An NFT
       </Web3Button>
     </div>
-    <Footer />
     </Layout>
   );
 };
