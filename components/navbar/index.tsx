@@ -39,7 +39,7 @@ const Navbar = () => {
         maxWidth: 1900,
         mx: 'auto',
         borderBottom: '1px solid $slate12',
-        zIndex: 999,
+        zIndex: 99999,
         background: '$slate12',
         position: 'fixed',
         top: 0,
@@ -70,7 +70,7 @@ const Navbar = () => {
           )}
         </Box>
       </Link>
-      <Box css={{ flex: 1, px: '$5', maxWidth: '60%' }}>
+      <Box css={{ flex: 1, px: '$5', maxWidth: '45%' }}>
       </Box>
       <Flex align="center" css={{ gap: '$5', mr: '$5' }}>
         <Link href="/mintingpage">

@@ -42,7 +42,6 @@
   margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
-  
 }
 
 .grid {
@@ -93,10 +92,28 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .topBottomLeft {
+   display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bottomRight {
+   display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bannerButtons {
+  scale: 0.4;
   }
 }
 
@@ -104,6 +121,7 @@
 .footer {
   border-color: #222;
 }
+
 .code {
   background: #111;
 }

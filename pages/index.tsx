@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <div>
       <ul style={{listStyleType: 'none'}}>
         <li>
-          <Link href="/stake-unick" id="unick membership">
+          <Link href="/unick" id="unick membership">
             <div>
               <Image className={styles.launchpadBanner}
                 src="/unicMintBanner.png"
@@ -29,6 +29,7 @@ const Home: NextPage = () => {
 
               <div className={styles.topBottomLeft}>
                 <video
+                  className= {styles.video}
                   onContextMenu={e => e.preventDefault()}
                   controls
                   controlsList="nodownload"
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
         <Hero />
 
         <h2 className={styles.veryBigSpacerTop}>Upcoming Drops 🚨 </h2>
-          <h3 className={styles.bigSpacerTop}>April 30</h3>
+          <h3 className={styles.bigSpacerTop}>To be confirmed</h3>
             <div className={`${styles.launchpadBanner} ${styles.spacerTop}`}>
               <ul style={{listStyleType: 'none'}}>
                 <li>
@@ -76,8 +77,8 @@ const Home: NextPage = () => {
                     <div>
                       <Image
                         className={styles.mintContainer}
-                        src="/BOGCbanner.png"
-                        alt="BOGC banner"
+                        src=""
+                        alt="banner"
                         width={1600}
                         height={500}
                         quality={100}
@@ -85,8 +86,8 @@ const Home: NextPage = () => {
                       />
                       <div className={styles.bottomLeft}>
                         <Image
-                          src="/bogc1.png"
-                          alt="Blockheads OG Club"
+                          src=""
+                          alt=""
                           height="200"
                           width="200"
                         />
@@ -94,7 +95,7 @@ const Home: NextPage = () => {
                           Blockheads <br />OG Club ✪
                         </h1>
                         <p className={styles.bannerStats}>By UnickLabs</p>
-                        <p className={styles.bannerStats}>8888 items · 0.025Ξ </p>
+                        <p className={styles.bannerStats}>8888 items · 0.007Ξ </p>
                       </div>
                     </div>
                   </Link>

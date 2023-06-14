@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from "next/image"
 
 const Hero: FunctionComponent = () => {
-  const chainId = ChainId.Mainnet;
+  const chainId = ChainId.Mumbai;
   const address = useAddress();
   const connectWallet = useMetamask();
 
